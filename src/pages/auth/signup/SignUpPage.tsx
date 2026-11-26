@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import InputGroup from "../../../components/common/input/InputGroup.tsx";
 
 const AuthContainer = styled.div`
     display: flex;
@@ -12,7 +13,7 @@ const AuthFormCard = styled.form`
     background-color: ${props => props.theme.color.background.paper};
     border-radius: 16px;
     border: 1px solid ${props => props.theme.color.divider};
-    padding: 40px 20px;    
+    padding: 40px 20px;
 `;
 
 const AuthTitle = styled.h1`
@@ -30,56 +31,20 @@ const AuthSubTitle = styled.h6`
     margin-bottom: 32px;
 `;
 
-const InputGroup = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-`;
-
-const Label = styled.label`
-    font-size: 14px;
-    font-weight: 800;
-    color: ${props => props.theme.color.text.default};
-`;
-
-const Input = styled.input`
-    width: 100%;
-    padding: 12px 16px;
-    background-color: ${props => props.theme.color.background.default};
-    border: 1px solid ${props => props.theme.color.divider};
-    border-radius: 8px;
-    font-size: 15px;
-    color: ${props => props.theme.color.text.default};
-    transition: all 0.5s;
-
-    &::placeholder {
-        color: ${props => props.theme.color.text.disabled};
-    }
-    &::focus {
-        border-color: ${props => props.theme.color.primary};
-    }
-`;
-const ErrorMessage = styled.span`
-    font-size: 13px;
-    color: ${props => props.theme.color.error};
-    font-weight: 500;
-`;
-
-
 function SignUpPage() {
+
     return (
         <AuthContainer>
             <AuthFormCard>
                 <AuthTitle>회원가입</AuthTitle>
-                <AuthSubTitle>토론대난투에 오신 걸 환영합니다!</AuthSubTitle>
-                <InputGroup>
-                    <Label>아이디</Label>
-                    <Input />
-                    <ErrorMessage>에러메세지 출력</ErrorMessage>
-                </InputGroup>
+                <AuthSubTitle>토론대난투에 오신 것을 환영합니다!</AuthSubTitle>
+                <InputGroup
+                    label={"아이디"}
+                />
+                <InputGroup label={"비밀번호"} errorMessage={"에러메세지222"} type={"password"} />
             </AuthFormCard>
         </AuthContainer>
-    )
+    );
 }
 
 export default SignUpPage;
