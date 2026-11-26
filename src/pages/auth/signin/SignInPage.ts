@@ -1,5 +1,5 @@
-function SignIpPage() {
-    return
+function SignInPage() {
+    return <></>;
 }
 
-export default SignIpPage;
+export default SignInPage;

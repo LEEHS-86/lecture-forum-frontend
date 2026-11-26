@@ -1,9 +1,8 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout.tsx";
+import HomePage from "../pages/HomePage.tsx";
+import SignInPage from "../pages/auth/signin/SignInPage.tsx";
 import SignUpPage from "../pages/auth/signup/SignUpPage.tsx";
-import HomePage from "./HomePage.tsx";
-import SignInPage from "../pages/auth/signin/SignInPage.ts";
-
 
 const router = createBrowserRouter([
     {
