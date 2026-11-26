@@ -40,22 +40,3 @@ export const darkTheme: DefaultTheme = {
     },
 };
 
-export const darkTheme: DefaultTheme = {
-    color: {
-        background: {
-            default: "#111827",
-            paper: "#1F2937"
-        },
-        text: {
-            default: "#F9FAFB",
-            disabled: "#6B7280"
-        },
-        divider: "#374151",
-        primary: "#3B82F6",
-        secondary: "#9CA3AF",
-        success: "#34D399",
-        error: "#F87171",
-        warning: "#FBBF24",
-        info: "#60A5FA",
-    },
-}
