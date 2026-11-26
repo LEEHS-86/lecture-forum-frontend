@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout.tsx";
-import HomePage from "../pages/HomePage.tsx";
+import HomePage from "../pages/auth/HomePage.tsx";
 import SignInPage from "../pages/auth/signin/SignInPage.tsx";
 import SignUpPage from "../pages/auth/signup/SignUpPage.tsx";
 
