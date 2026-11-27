@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router";
 import MainLayout from "../layouts/MainLayout.tsx";
-import HomePage from "../pages/auth/HomePage.tsx";
+import HomePage from "../pages/HomePage.tsx";
 import SignInPage from "../pages/auth/signin/SignInPage.tsx";
 import SignUpPage from "../pages/auth/signup/SignUpPage.tsx";
 
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
             {
                 path: "auth",
                 children: [
-                    { path: "signIn", element: <SignInPage /> },
+                    { path: "signin", element: <SignInPage /> },
                     { path: "signup", element: <SignUpPage /> },
                 ],
             },
